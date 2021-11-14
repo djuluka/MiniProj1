@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="spaApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+    <link rel="stylesheet" href="statics/css/style.css" />
+  </head>
+  <body>
+    <script type="text/ng-template" id="pages/home.html">
+      <p>Hi...</p>
+      <h1>I'm <font color="#17d1ac">Jailson</font> Costa, </h1>
+      <p class="details" align="justify">
+        {{message}}
+      </p>
+      <!--<ul class="icones-sociais">
+          <li>
+               <img class="empresas" src="statics/images/cedeao.jpg" alt="Icone Facebook"/>
+          </li>
+          <li>
+            <img class="empresas" src="statics/images/giz.jpg" alt="Icone Facebook"/>
+       </li>
+      </ul>-->
+    </script>
+    <script type="text/ng-template" id="pages/whatIdo.html">
+      <h1>What  <font color="#17d1ac">I</font> do</h1>
+         <p class="details" align="justify">
+             {{message}}
+         </p>
+    </script>
+    <script type="text/ng-template" id="pages/hobbies.html">
+      <h1>My  <font color="#17d1ac">hobbies</font></h1>
+      <p class="details" align="justify">
+          {{message}}
+      </p>
+    </script>
+    <section id="main">
+      <ul class="topnav">
+        <li><a class="active" href="#/">Quem Sou Eu</a></li>
+        <li><a href="#/whatIdo">O que faço</a></li>
+        <li><a href="#/hobbies">Hobbies</a></li>
+        <li style="float: right"><a href="#/contacts">Contacts</a></li>
+      </ul>
+    </section>
+
+    <div class="text">
+      <div ng-view></div>
+    </div>
+
+    <div id="copyright" class="footer">
+      <ul class="icones-sociais">
+        <li>
+          <a href="#/"
+            ><img src="statics/images/face.png" alt="Icone Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#/"
+            ><img src="statics/images/twiter.png" alt="Icone do Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#/"
+            ><img src="statics/images/instagram.png" alt="Icone do Intagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#/"
+            ><img src="statics/images/youtube.png" alt="Icone do Youtube"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <script src="spa.js"></script>
+  </body>
+</html>
